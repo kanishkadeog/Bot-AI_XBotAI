@@ -16,77 +16,91 @@ You may also see any lint errors in the console.
 
 --------------------------------------------------------------------------------------------------------------------------
 
-# XCounter - ReactJS Form App
 
-**XCounter** is a basic ReactJS application that demonstrates the use of functional components, state management using `useState`, and dynamic UI rendering based on user interaction. It’s designed to meet specific UI and behavior requirements for assessment purposes.
+# 🤖 XBotAI – Chat with Soul AI
 
----
-
-## 📌 Project Overview
-
-This app displays a numeric count that:
-- Starts at **0** by default
-- Can be **incremented** or **decremented** using buttons
-- Can go into **negative values**
-- Displays the value in the format: `Count: <number>`
+XBotAI is a responsive, interactive chat interface built using **ReactJS** that allows users to chat with an AI model, give real-time feedback, and revisit previous conversations. This project was created as part of a 10-hour frontend assessment challenge.
 
 ---
+## 🔗 Live Demo
+[Click here to view the live app](https://xbotai-hqabzvmdn-kanishkas-projects-95e27a37.vercel.app/)
 
-## 🚀 Demo
 
-[Live Demo Link](https://xcounter-1oldz3w4m-kanishkas-projects-95e27a37.vercel.app/)
+## 🚀 Features
 
+- 🧠 **Chat Interface** with simulated AI responses
+- 👍👎 **Like/Dislike Feedback** on AI messages (visible on hover)
+- ⭐ **5-Star Rating & Feedback Form** at the end of each conversation
+- 💾 **Save Conversations** and revisit via `/history` route
+- 🕓 **Conversation History View**
+- 📊 **Feedback Summary View** with rating filter
+- 📱 **Responsive Design** for mobile/tablet/desktop
+- ✅ **Assessment Ready** (passes all automated test cases)
+
+---
 
 ## 📸 Screenshots
 
-| Initial View | After Submission |
-|--------------|------------------|
-| ![Initial]
-![image](![image](https://github.com/user-attachments/assets/8f4844f4-1548-43e5-8023-bfef659495b2)
-)
+Chat AI Page :-
+![image](https://github.com/user-attachments/assets/bfe70582-72c5-4f99-88f1-c497c4b4205d)
 
 
-| ![Submitted]
-![image](https://github.com/user-attachments/assets/a94de877-aff1-4faf-8afa-a0111ca6492a)
+Feedback & rating :-
+![image](https://github.com/user-attachments/assets/8ce57ed3-3764-435c-94cc-d61dd10641a4)
 
-)
 
- |
+History Page :-
+![image](https://github.com/user-attachments/assets/45ce56d8-5f69-4425-8527-d4542fe6d11e)
 
-## 🎯 Features
 
-- ✅ Functional buttons to **increment** and **decrement** the counter
-- ✅ Counter updates dynamically with each click
-- ✅ Counter allows negative numbers
-- ✅ Displays the counter in the **exact** required format: `Count: <value>`
-- ✅ Button labels strictly set to `Increment` and `Decrement`
-- ✅ Fully responsive and styled with inline CSS
-- ✅ Passes all assessment test cases
 
--------
-
-## ⚙️ Tech Stack
-
-| Tech       | Purpose                      |
-|------------|------------------------------|
-| ReactJS    | Frontend UI and state logic  |
-| JavaScript | Core language                |
-| JSX        | Markup for components        |
-| CSS (inline) | Component-specific styling |
 
 ---
 
-## 📁 Folder Structure
+## 🛠️ Tech Stack
 
- src/
-   ├── App.js # Main app logic and UI
-   ├── index.js # Entry point for React
-   └── components/
-         └── Counter.js
+- ReactJS
+- HTML5, CSS3
+- JavaScript (ES6+)
+- React Router DOM
 
+---
 
+## 📂 Folder Structure
 
-
-
-
- 
+## 📂 Folder Structure
+src/
+│
+├── assets/
+├── aiData/
+│     └── sampleData.json
+├── components/
+│     ├── ChatFilter/
+│     │     └── ChatFilter.jsx
+│     ├── ChatHistoryCard/
+│     │     └── ChatHistoryCard.jsx
+│     ├── ChatInput/
+│     │     └── ChatInput.jsx
+│     ├── ChattingCard/
+│     │     └──ChattingCard.jsx
+│     ├── FeedbackModal/
+│     │     └── FeedbackModal.jsx
+│     ├── InitialChat/
+│     │     ├── Card.jsx
+│     │     └── InitialChat.jsx
+│     ├── Navbar/
+│     │     └── Navbar.jsx
+│     └── sidebar/
+│           └── sidebar.jsx
+├── Pages/
+│     ├── History/
+│     │     └── History.jsx
+│     └── Home/
+│           └── Home.jsx
+├── theme/
+│     ├── ThemeContext.jsx
+│     └── ThemePallete.jsx
+├── App.js
+├── index.css
+├── index.js
+└── style.css
